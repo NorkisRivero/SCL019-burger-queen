@@ -1,0 +1,15 @@
+.btn-menu{
+  width: 15rem;
+  height: auto;
+  background-color: #FFA831;
+  border-radius: 15px;
+  margin: auto;
+  padding: 1rem 0 1rem 0;
+  color: black;
+  border: 10rem;
+  font-family: 'Poppins';
+}
+.menu{
+    font: bold;
+    font-family: 'Poppins';
+}

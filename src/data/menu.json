@@ -1,0 +1,47 @@
+{
+    "desayunos": [
+      {
+        "id": "d1",
+        "name": "Arepa con queso",
+        "price": 1500
+      },
+      {
+        "id": "d2",
+        "name": "Arepa dominó",
+        "price": 1500
+      },
+      {
+        "id": "d3",
+        "name": "Maltín Polar",
+        "price": 1500
+      },
+      {
+        "id": "d4",
+        "name": "Jugo natural",
+        "price": 1500
+      }
+    ],
+  
+    "almuerzos": [
+      {
+        "id": "a1",
+        "name": "Pabellón criollo",
+        "price": 4500
+      },
+      {
+        "id": "a2",
+        "name": "Cachapa vegetariana",
+        "price": 4500
+      },
+      {
+        "id": "a3",
+        "name": "Maltín Polar",
+        "price": 1500
+      },
+      {
+        "id": "a4",
+        "name": "Jugo natural",
+        "price": 1500
+      }
+    ]
+  }
