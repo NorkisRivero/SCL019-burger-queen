@@ -1,49 +1,85 @@
 import React from 'react'
-import data from '../data/menu.json'
+// import data from '../data/menu.json'
 import '../css/Menu.css'
 import Name from '../componentes/Name';
 import Mesas from './Mesas';
-
+import Pedidos from './Pedidos'
+import Send from './Send';
+// import Desayunos from './Desayunos';
+import Almuerzos from './Almuerzos';
+import { useState } from 'react';
 
 
 
 const Menu = () => {
+
+  const [toggleState, setToggleState] = useState(1);
+
+  const toggleTab = (index) => {
+    setToggleState(index);
+  }
+
   return (
     <section>
+
       <div className='container'>
-        <div className='col-6 d-flex justify-content-around p-3 fw-bold'>
-          <button className="btn btn-primary btn-menu">Desayuno</button>
-          <button className="btn btn-primary btn-menu">Almuerzo</button>
-        </div>
 
         <div className='row'>
-          <div className='col-6'>
 
-            <ul className="list-group d-flex">
-              {data.desayunos.map(element => {
-                return (
-                  <li className='list-group-item menu mt-3'>{element.name}   {element.price} </li>)
-              })}
-            </ul>
-
-
+          <div className='col-6 d-flex justify-content-around p-3 fw-bold m-5'>
+            <div className={toggleState === 1 ? "tabs active-tabs" : "tabs"}>
+              <button className="btn btn-primary btn-menu"
+                onClick={() => toggleTab(1)}>Desayuno</button>
+            </div>
+            <div className={toggleState === 2 ? 'tabs active-tabs' : 'tabs'}>
+              <button className="btn btn-primary btn-menu"
+                onClick={() => toggleTab(2)}>Almuerzo</button>
+            </div>
           </div>
-          <div className='col-6'>
-            <section>
-            <Name/>
-            <Mesas/>
-            </section>
+
+          <div className='row'>
+            <div className='col-6 d-flex justify-content-center p-5 mt-3'>
+
+
+              <div className='content-tabs'>
+
+                <div className={toggleState === 1 ? "active-content" : "content"}>
+                  {/* <Desayunos /> */}
+                </div>
+
+                <div className={toggleState === 2 ? "active-content" : "content"}>
+                  <Almuerzos />
+                </div>
+
+              </div>
+
+
+            </div>
+            <div className='col-6 pedidos d-flex justify-content-center p-5 mt-3'>
+              <section>
+                <div>
+                  <Name />
+                </div>
+                <div> <Mesas /></div>
+                <div>  <Pedidos /></div>
+                <div>
+                  <Send />
+                </div>
+
+              </section>
 
 
 
 
+
+            </div>
 
           </div>
 
         </div>
-
-      </div>
+        </div>
     </section>
+
   )
 }
 

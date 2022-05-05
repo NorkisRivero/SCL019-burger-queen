@@ -1,5 +1,5 @@
 .btn-menu{
-  width: 15rem;
+  width: 13rem;
   height: auto;
   background-color: #FFA831;
   border-radius: 15px;
@@ -9,7 +9,48 @@
   border: 10rem;
   font-family: 'Poppins';
 }
-.menu{
+.menu {
     font: bold;
     font-family: 'Poppins';
+    margin-top: 3px;
+    min-width: 2px;
+    min-height: 20px;
+    padding: 3rem;
+    display: block;
+
 }
+
+.pedidos{
+  background-color: whitesmoke;
+  height: auto;
+  border-radius: 15px;
+  margin: auto;
+  
+}
+.name{
+  background-color:  #FFA831;
+  border-radius: 10rem;
+}
+.mesas{
+  background-color:  #FFA831;
+  border-radius: 10rem;
+}
+.send{
+  width: 15rem;
+  height: auto;
+  background-color:  #FFA831;
+  border-radius: 10rem;
+  margin: auto;
+  
+  color: black;
+  border: 10rem;
+  font-family: 'Poppins';
+}
+
+.active-content {
+  display: block;
+}
+
+.content {
+  display: none;
+} 

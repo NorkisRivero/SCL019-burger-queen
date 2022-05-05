@@ -7,26 +7,13 @@ import Nav from '../componentes/Nav';
 function Mesero() {
     return (
       <section className='contenedor-mesero'>
+        <div> 
        <Nav/>
-
-       {/* <div className='col-6'>
-         <button className="btn btn-warning">Desayuno</button>
-         <button className="btn btn-warning">Almuerzo</button>
-       </div> */}
-
+       </div>
+       
+       <div> 
        <Menu/>
-      
-
-
-
-      
-
-
-
-
-  
-     
-  
+       </div>
       </section> 
   
     );

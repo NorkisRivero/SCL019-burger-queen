@@ -35,13 +35,14 @@
       },
       {
         "id": "a3",
-        "name": "Maltín Polar",
+        "name": "Café",
         "price": 1500
       },
       {
         "id": "a4",
-        "name": "Jugo natural",
+        "name": "Bebidas",
         "price": 1500
       }
+
     ]
   }
