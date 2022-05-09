@@ -5,9 +5,10 @@ import Name from '../componentes/Name';
 import Mesas from './Mesas';
 import Pedidos from './Pedidos'
 import Send from './Send';
-// import Desayunos from './Desayunos';
+import Desayunos from './Desayunos';
 import Almuerzos from './Almuerzos';
 import { useState } from 'react';
+
 
 
 
@@ -20,6 +21,7 @@ const Menu = () => {
   }
 
   return (
+
     <section>
 
       <div className='container'>
@@ -27,24 +29,26 @@ const Menu = () => {
         <div className='row'>
 
           <div className='col-6 d-flex justify-content-around p-3 fw-bold m-5'>
-            <div className={toggleState === 1 ? "tabs active-tabs" : "tabs"}>
+            <div className={toggleState === 1 ? "tabs active-tabs" : "tabs"} >
               <button className="btn btn-primary btn-menu"
-                onClick={() => toggleTab(1)}>Desayuno</button>
+                onClick={() => toggleTab(1)} >Desayuno</button>
             </div>
+
+
             <div className={toggleState === 2 ? 'tabs active-tabs' : 'tabs'}>
               <button className="btn btn-primary btn-menu"
-                onClick={() => toggleTab(2)}>Almuerzo</button>
+                onClick={() => toggleTab(2)} >Almuerzo</button>
             </div>
           </div>
 
           <div className='row'>
             <div className='col-6 d-flex justify-content-center p-5 mt-3'>
 
-
               <div className='content-tabs'>
 
                 <div className={toggleState === 1 ? "active-content" : "content"}>
-                  {/* <Desayunos /> */}
+
+                  <Desayunos />
                 </div>
 
                 <div className={toggleState === 2 ? "active-content" : "content"}>
@@ -52,32 +56,30 @@ const Menu = () => {
                 </div>
 
               </div>
+              </div>
 
 
-            </div>
-            <div className='col-6 pedidos d-flex justify-content-center p-5 mt-3'>
-              <section>
-                <div>
-                  <Name />
-                </div>
-                <div> <Mesas /></div>
-                <div>  <Pedidos /></div>
-                <div>
-                  <Send />
-                </div>
-
-              </section>
+              <div className='col-6 pedidos d-flex justify-content-center p-5 mt-3'>
+                <section>
+                  <div>
+                    <Name />
+                  </div>
+                  <div> <Mesas /></div>
+                  <div>  <Pedidos /></div>
 
 
+                  <div>
+                    <Send />
+                  </div>
 
-
+                </section>
+              </div>
 
             </div>
 
           </div>
+        </div>
 
-        </div>
-        </div>
     </section>
 
   )
