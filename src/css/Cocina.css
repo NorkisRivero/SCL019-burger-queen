@@ -1,0 +1,32 @@
+.navbar {
+    margin: 25px;
+}
+
+
+.pedido-container {
+    color: black;
+    margin: 35px;
+    gap:20px;
+    height: 5rem;
+    
+   
+}
+
+
+
+.card {
+    
+    display: block;
+    min-width: 2px;
+    min-height: 10px;
+    padding: 3rem;
+    border-radius: 2rem;
+   
+   
+}
+
+.pedido-cocina {
+    gap: 10px;
+    height: 30rem;
+    min-width: auto;
+}

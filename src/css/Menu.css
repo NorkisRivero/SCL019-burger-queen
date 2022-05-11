@@ -63,3 +63,6 @@
   margin: 5;
   padding: 0.5rem;
 }
+.form-control {
+  border-radius: 10rem;
+}

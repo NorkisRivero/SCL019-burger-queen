@@ -1,10 +1,6 @@
 import React from 'react'
-// import data from '../data/menu.json'
 import '../css/Menu.css'
-import Name from '../componentes/Name';
-import Mesas from './Mesas';
 import Pedidos from './Pedidos'
-import Send from './Send';
 import Desayunos from './Desayunos';
 import Almuerzos from './Almuerzos';
 import { useState } from 'react';
@@ -61,16 +57,16 @@ const Menu = () => {
 
               <div className='col-6 pedidos d-flex justify-content-center p-5 mt-3'>
                 <section>
-                  <div>
+                  {/* <div>
                     <Name />
                   </div>
-                  <div> <Mesas /></div>
+                  <div> <Mesas /></div> */}
                   <div>  <Pedidos /></div>
 
 
-                  <div>
+                  {/* <div>
                     <Send />
-                  </div>
+                  </div> */}
 
                 </section>
               </div>
